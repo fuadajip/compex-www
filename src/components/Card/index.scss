@@ -1,0 +1,78 @@
+@import '../../scss/index.scss';
+
+.compex-card {
+  background-color: $bg-white;
+  width: 300px;
+  border-radius: $border-radius-small;
+  box-shadow: 0px 2px 8px -3px lighten($color: $color-black, $amount: 30%);
+  color: $color-black;
+  transition: all 0.3s;
+}
+
+.compex-card-hover:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 16px -3px lighten($color: $color-black, $amount: 30%);
+}
+
+.compex-card-small > .compex-card-head {
+  padding: 0 $padding-small;
+}
+
+.compex-card-small > .compex-card-body,
+.compex-card-small > .compex-card-footer {
+  padding: $padding-large $padding-small;
+}
+
+.compex-card-head {
+  border-bottom: 1px solid lighten($color: $color-grey, $amount: 35%);
+  min-height: 48px;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-regular;
+  letter-spacing: $letter-spacing-x-small;
+  padding: 0 $padding-large;
+}
+.compex-card-head-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .compex-card-head-title {
+    padding: $padding-small 0;
+    margin-right: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+    text-align: left;
+  }
+  .compex-card-head-action {
+    padding: $padding-small 0;
+    float: right;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.compex-card-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-color: $bg-grey;
+  min-height: 320px;
+}
+
+.compex-card-body {
+  padding: $padding-large;
+}
+
+.compex-card-footer {
+  padding: $padding-large;
+  border-top: 1px solid lighten($color: $color-grey, $amount: 35%);
+}
+
+.compex-card-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

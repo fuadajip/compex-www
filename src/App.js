@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
+// @flow
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
 
-class App extends Component {
+type Props = {
+  className?: string
+};
+
+class App extends Component<Props> {
   render() {
     return (
       <div className="App">
@@ -15,10 +21,15 @@ class App extends Component {
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Learn React
           </a>
+          <Card
+            title={'Header'}
+            extra={<a href="/">more</a>}
+            footer="test footer">
+            Conten generated
+          </Card>
         </header>
       </div>
     );

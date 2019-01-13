@@ -1,0 +1,13 @@
+@import '../../scss/index.scss';
+
+.compex-breadcrumb {
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $color-grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

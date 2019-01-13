@@ -1,0 +1,96 @@
+@import '../../scss/index.scss';
+
+.compex-btn {
+  line-height: 1.5;
+  display: inline-block;
+  font-weight: $font-weight-light;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  background-color: $bg-grey;
+  box-shadow: 0 2px 12px -2px $color-grey;
+  padding: 0 $padding-small;
+  height: 34px;
+  font-size: $font-size-small;
+  letter-spacing: $letter-spacing-x-small;
+  border-radius: $border-radius-small;
+  transition: all 0.3s;
+}
+
+.compex-btn:hover {
+  box-shadow: 0 2px 12px 1px $color-grey;
+}
+
+.compex-btn-block {
+  width: 100%;
+}
+
+.compex-btn.compex-btn-lg {
+  font-size: $font-size-regular;
+  height: 40px;
+}
+
+.compex-btn.compex-btn-sm {
+  font-size: $font-size-x-small;
+  height: 28px;
+}
+
+.compex-btn.compex-btn-primary {
+  background-color: $color-blue;
+  color: $color-white;
+}
+.compex-btn.compex-btn-primary:hover {
+  background-color: darken($color: $color-blue, $amount: 8%);
+  color: $color-white;
+}
+
+.compex-btn.compex-btn-success {
+  background-color: $color-green;
+  color: $color-white;
+}
+.compex-btn.compex-btn-success:hover {
+  background-color: darken($color: $color-green, $amount: 8%);
+  color: $color-white;
+}
+
+.compex-btn.compex-btn-warning {
+  background-color: $color-orange;
+  color: $color-white;
+}
+.compex-btn.compex-btn-warning:hover {
+  background-color: darken($color: $color-orange, $amount: 8%);
+  color: $color-white;
+}
+
+.compex-btn.compex-btn-danger {
+  background-color: $color-red;
+  color: $color-white;
+}
+.compex-btn.compex-btn-danger:hover {
+  background-color: darken($color: $color-red, $amount: 8%);
+  color: $color-white;
+}
+
+.compex-btn > .compex-btn-icon-left {
+  margin-right: 8px;
+}
+.compex-btn > .compex-btn-icon-right {
+  margin-left: 8px;
+}
+
+.compex-btn[disabled],
+.compex-btn-primary[disabled],
+.compex-btn-primary:hover[disabled],
+.compex-btn-success[disabled],
+.compex-btn-success:hover[disabled],
+.compex-btn-warning[disabled],
+.compex-btn-warning:hover[disabled],
+.compex-btn-danger[disabled],
+.compex-btn-danger:hover[disabled] {
+  box-shadow: none;
+  background-color: $bg-grey;
+  color: $color-grey;
+  border-color: #d9d9d9;
+  cursor: default;
+}

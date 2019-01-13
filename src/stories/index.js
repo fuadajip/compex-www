@@ -8,6 +8,7 @@ import {linkTo} from '@storybook/addon-links';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import {Breadcrumb, BreadcrumbItem} from '../components/Breadcrumb';
+import Alert from '../components/Alert';
 
 // storiesOf('Welcome', module).add('to Storybook', () => (
 //   <Welcome showApp={linkTo('Button')} />
@@ -111,4 +112,37 @@ storiesOf('Breadcrumb', module)
         <BreadcrumbItem>Awesome</BreadcrumbItem>
       </Breadcrumb>
     </div>
+  ));
+
+storiesOf('Alert', module)
+  .add('default', () => <Alert title={'My Alert Title'}>Alert body</Alert>)
+  .add('primary', () => (
+    <Alert title={'My Alert Title'} type="primary">
+      Alert body
+    </Alert>
+  ))
+  .add('success', () => (
+    <Alert title={'My Alert Title'} type="success">
+      Alert body
+    </Alert>
+  ))
+  .add('warning', () => (
+    <Alert title={'My Alert Title'} type="warning">
+      Alert body
+    </Alert>
+  ))
+  .add('danger', () => (
+    <Alert title={'My Alert Title'} type="danger">
+      Alert body
+    </Alert>
+  ))
+  .add('onClose', () => (
+    <Alert
+      title={'My Alert Title'}
+      closeIcon
+      onClose={e => {
+        console.log('on close alert');
+      }}>
+      Alert body onClose
+    </Alert>
   ));

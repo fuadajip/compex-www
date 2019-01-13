@@ -1,0 +1,56 @@
+@import '../../scss/index.scss';
+
+.compex-alert {
+  padding: 8px $padding-small;
+  border: 1px solid lighten($color: $color-grey, $amount: 20%);
+  background-color: lighten($color: $color-grey, $amount: 30%);
+  border-radius: $border-radius-small;
+}
+.compex-alert.compex-alert-primary {
+  border: 1px solid lighten($color: $color-blue, $amount: 20%);
+  background-color: lighten($color: $color-blue, $amount: 30%);
+}
+.compex-alert.compex-alert-success {
+  border: 1px solid lighten($color: $color-green, $amount: 20%);
+  background-color: lighten($color: $color-green, $amount: 30%);
+}
+
+.compex-alert.compex-alert-warning {
+  border: 1px solid lighten($color: $color-orange, $amount: 20%);
+  background-color: lighten($color: $color-orange, $amount: 30%);
+}
+
+.compex-alert.compex-alert-danger {
+  border: 1px solid lighten($color: $color-red, $amount: 20%);
+  background-color: lighten($color: $color-red, $amount: 30%);
+}
+
+.compex-alert-title {
+  color: $color-black;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-regular;
+  letter-spacing: $letter-spacing-small;
+  margin-bottom: 12px;
+}
+
+.compex-alert-body {
+  color: $color-black;
+  font-weight: $font-weight-light;
+  font-size: $font-size-small;
+  letter-spacing: $letter-spacing-small;
+  line-height: $line-height-small;
+  margin-bottom: 12px;
+}
+
+.compex-alert.compex-alert-closable {
+  padding-right: 30px;
+}
+
+.compex-close-icon {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  line-height: $line-height-regular;
+  color: $color-black;
+  cursor: pointer;
+}

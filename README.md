@@ -56,6 +56,7 @@ Run test with code coverage
 - [Card](#-card)
 - [Button](#-button)
 - [Breadcrumb](#-breadcrumb)
+- [Alert](#-alert)
 
 ## <a name="#card"></a> Card
 
@@ -254,6 +255,62 @@ Run test with code coverage
         <td> / </td>
         <td>
             <code>/</code>
+        </td>
+    </tr>
+</table>
+
+## <a name="#alert"></a> Alert
+
+<table>
+    <tr>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Type of alert</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td> default | primary | success | warning | danger </td>
+        <td>
+            <code>default</code>
+        </td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>Show alert title to indicate what kind of alert by their title</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td> - </td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>closeIcon</td>
+        <td>Show close icon in right corner of alert box</td>
+        <td>
+            <code>boolean</code>
+        </td>
+        <td> - </td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>onClose</td>
+        <td>Action onClick triggered by passed onClose props </td>
+        <td>
+            <code>event => void</code>
+        </td>
+        <td> - </td>
+        <td>
+            <code>-</code>
         </td>
     </tr>
 </table>

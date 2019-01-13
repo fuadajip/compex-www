@@ -1,68 +1,131 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Compex WWW
 
-## Available Scripts
+<table>
+    <tr>
+        <th>Branch</th>
+        <th>Pipeline</th>
+        <th>Test coverage </th>
+    </tr>
+    <tr>
+        <td>Master</td>
+        <td>
+            <a href="https://gitlab.com/inspirasia/core/core-www/commits/master">
+                <img alt="pipeline status" src="https://gitlab.com/inspirasia/core/core-www/badges/master/pipeline.svg" />
+            </a>
+        </td>
+        <td>
+            <a shref="https://gitlab.com/inspirasia/core/core-www/commits/master">
+                <img alt="coverage report" src="https://gitlab.com/inspirasia/core/core-www/badges/master/coverage.svg" />
+            </a>
+        </td>
+    </tr>
+</table>
 
-In the project directory, you can run:
+# How To
 
-### `npm start`
+## Run project 
+```shell
+    yarn start
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run storybook
+Run storybook will give us more context of each components
+```shell
+    yarn storybook
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Run Test
+Run test without coverage 
+```shell
+    yarn test
+``` 
 
-### `npm test`
+Run test with code coverage
+```shell
+    yarn test:coverage
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Content
 
-### `npm run build`
+- [Card](#card)
+- [Button](#button)
+- [Breadcrumb](#breadcrumb) 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## <a name="#card"></a> Card
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Option Value</th>
+        <th>Default</th>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>Set card header title</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>hoverable</td>
+        <td>Set card on hover efect</td>
+        <td>
+            <code>boolean</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>Set card size</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>small</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>extra</td>
+        <td>Set extra component in card header, usually used ad card action in header</td>
+        <td>
+            <code>node</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>cover</td>
+        <td>Create a card cover with passed image as props</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>footer</td>
+        <td>Define card footer</td>
+        <td>
+            <code>node</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,18 @@
+cache:
+  key: '$CI_COMMIT_REF_NAME node:10.9.0-alpine'
+
+stages:
+  - test
+
+test:
+  stage: test
+  image: node:10.9.0-alpine
+  only:
+    - 'master'
+  before_script:
+    - whoami
+    - node --version
+    - echo "> Start running test"
+    - yarn
+  script:
+    - yarn test:coverage

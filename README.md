@@ -53,19 +53,19 @@ Run test with code coverage
 
 # Content
 
-- [Card](#card)
-- [Button](#button)
-- [Breadcrumb](#breadcrumb)
+- [Card](#-card)
+- [Button](#-button)
+- [Breadcrumb](#-breadcrumb)
 
 ## <a name="#card"></a> Card
 
 <table>
     <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Option Value</th>
-        <th>Default</th>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
     </tr>
     <tr>
         <td>title</td>
@@ -75,7 +75,7 @@ Run test with code coverage
         </td>
         <td>-</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
     <tr>
@@ -97,7 +97,7 @@ Run test with code coverage
         </td>
         <td>small</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
     <tr>
@@ -130,7 +130,7 @@ Run test with code coverage
         </td>
         <td>-</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
     <tr>
@@ -141,7 +141,7 @@ Run test with code coverage
         </td>
         <td>-</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
 </table>
@@ -150,11 +150,11 @@ Run test with code coverage
 
 <table>
     <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Option Value</th>
-        <th>Default</th>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
     </tr>
     <tr>
         <td>disabled</td>
@@ -173,9 +173,9 @@ Run test with code coverage
         <td>
             <code>string</code>
         </td>
-        <td>primary | success | warning | danger</td>
+        <td>default | primary | success | warning | danger</td>
         <td>
-            <code>true</code>
+            <code>default</code>
         </td>
     </tr>
     <tr>
@@ -186,7 +186,7 @@ Run test with code coverage
         </td>
         <td>-</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
     <tr>
@@ -197,7 +197,7 @@ Run test with code coverage
         </td>
         <td>left | right </td>
         <td>
-            <code>true</code>
+            <code>left</code>
         </td>
     </tr>
     <tr>
@@ -206,9 +206,9 @@ Run test with code coverage
         <td>
             <code>string</code>
         </td>
-        <td>small | large</td>
+        <td>default | small</td>
         <td>
-            <code>true</code>
+            <code>default</code>
         </td>
     </tr>
     <tr>
@@ -230,7 +230,7 @@ Run test with code coverage
         </td>
         <td>-</td>
         <td>
-            <code>false</code>
+            <code>-</code>
         </td>
     </tr>
 </table>
@@ -239,21 +239,21 @@ Run test with code coverage
 
 <table>
     <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Option Value</th>
-        <th>Default</th>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
     </tr>
     <tr>
         <td>separator</td>
-        <td>Breadcrumb separator for breadcrumb item</td>
+        <td>Breadcrumb separator for breadcrumb item list</td>
         <td>
             <code>string</code>
         </td>
         <td> / </td>
         <td>
-            <code>true</code>
+            <code>/</code>
         </td>
     </tr>
 </table>

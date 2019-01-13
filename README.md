@@ -23,24 +23,30 @@
 
 # How To
 
-## Run project 
+## Run project
+
 ```shell
     yarn start
 ```
 
 ## Run storybook
+
 Run storybook will give us more context of each components
+
 ```shell
     yarn storybook
 ```
 
 ## Run Test
-Run test without coverage 
+
+Run test without coverage
+
 ```shell
     yarn test
-``` 
+```
 
 Run test with code coverage
+
 ```shell
     yarn test:coverage
 ```
@@ -49,8 +55,7 @@ Run test with code coverage
 
 - [Card](#card)
 - [Button](#button)
-- [Breadcrumb](#breadcrumb) 
-
+- [Breadcrumb](#breadcrumb)
 
 ## <a name="#card"></a> Card
 
@@ -126,6 +131,129 @@ Run test with code coverage
         <td>-</td>
         <td>
             <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>style</td>
+        <td>Define custom style for card</td>
+        <td>
+            <code>stylesheet</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+</table>
+
+## <a name="#button"></a> Button
+
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Option Value</th>
+        <th>Default</th>
+    </tr>
+    <tr>
+        <td>disabled</td>
+        <td>Make button disabled</td>
+        <td>
+            <code>boolean</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Set button type</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>primary | success | warning | danger</td>
+        <td>
+            <code>true</code>
+        </td>
+    </tr>
+    <tr>
+        <td>icon</td>
+        <td>Set button icon</td>
+        <td>
+            <code>node</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>iconPosition</td>
+        <td>Set icon position inside the button</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>left | right </td>
+        <td>
+            <code>true</code>
+        </td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>set size of the button</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>small | large</td>
+        <td>
+            <code>true</code>
+        </td>
+    </tr>
+    <tr>
+        <td>block</td>
+        <td>Set button width 100% match to parent</td>
+        <td>
+            <code>boolean</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>onClick</td>
+        <td>Set button onClick function</td>
+        <td>
+            <code>(event) => void</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+</table>
+
+## <a name="#breadcrumb"></a> Breadcrumb
+
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Option Value</th>
+        <th>Default</th>
+    </tr>
+    <tr>
+        <td>separator</td>
+        <td>Breadcrumb separator for breadcrumb item</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td> / </td>
+        <td>
+            <code>true</code>
         </td>
     </tr>
 </table>

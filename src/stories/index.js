@@ -9,6 +9,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import {Breadcrumb, BreadcrumbItem} from '../components/Breadcrumb';
 import Alert from '../components/Alert';
+import Badge from '../components/Badge';
 
 // storiesOf('Welcome', module).add('to Storybook', () => (
 //   <Welcome showApp={linkTo('Button')} />
@@ -146,3 +147,15 @@ storiesOf('Alert', module)
       Alert body onClose
     </Alert>
   ));
+
+storiesOf('Badge', module)
+  .add('default', () => <Badge hoverable>Default badge</Badge>)
+  .add('not hoverable', () => <Badge>not hoverable</Badge>)
+  .add('primary', () => (
+    <Badge type="primary" hoverable>
+      primary
+    </Badge>
+  ))
+  .add('success', () => <Badge type="success">success</Badge>)
+  .add('warning', () => <Badge type="warning">warning</Badge>)
+  .add('danger', () => <Badge type="danger">warning</Badge>);

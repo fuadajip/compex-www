@@ -1,0 +1,43 @@
+@import '../../scss/index.scss';
+
+.compex-badge {
+  background-color: $bg-grey;
+  border: 1px solid darken($color: $bg-grey, $amount: 10%);
+  padding: 0 $padding-small;
+  height: 20px;
+  line-height: $line-height-small;
+  font-size: $font-size-x-small;
+  white-space: nowrap;
+  box-shadow: 0 1px 8px -3px $color-grey;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.compex-badge.compex-badge-hoverable:hover {
+  box-shadow: 0 1px 8px -1px darken($color: $color-grey, $amount: 8%);
+  cursor: pointer;
+}
+
+.compex-badge.compex-badge-pill {
+  border-radius: $border-radius-medium;
+}
+
+.compex-badge.compex-badge-primary {
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.compex-badge.compex-badge-success {
+  background-color: $color-green;
+  color: $color-white;
+}
+
+.compex-badge.compex-badge-warning {
+  background-color: $color-orange;
+  color: $color-white;
+}
+
+.compex-badge.compex-badge-danger {
+  background-color: $color-red;
+  color: $color-white;
+}

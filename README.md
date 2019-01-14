@@ -57,6 +57,7 @@ Run test with code coverage
 - [Button](#-button)
 - [Breadcrumb](#-breadcrumb)
 - [Alert](#-alert)
+- [Badge](#-badge)
 
 ## <a name="#card"></a> Card
 
@@ -309,6 +310,51 @@ Run test with code coverage
             <code>event => void</code>
         </td>
         <td> - </td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+</table>
+
+## <a name="#badge"></a> Badge
+
+<table>
+    <tr>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Type of badge</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>default | primary | success | warning | danger</td>
+        <td>
+            <code>default</code>
+        </td>
+    </tr>
+    <tr>
+        <td>hoverable</td>
+        <td>Make badge hoverable or not</td>
+        <td>
+            <code>boolean</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>false</code>
+        </td>
+    </tr>
+    <tr>
+        <td>children</td>
+        <td>Child components of badge</td>
+        <td>
+            <code>node</code>
+        </td>
+        <td>-</td>
         <td>
             <code>-</code>
         </td>

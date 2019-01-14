@@ -58,6 +58,7 @@ Run test with code coverage
 - [Breadcrumb](#-breadcrumb)
 - [Alert](#-alert)
 - [Badge](#-badge)
+- [Image](#-image)
 
 ## <a name="#card"></a> Card
 
@@ -353,6 +354,62 @@ Run test with code coverage
         <td>Child components of badge</td>
         <td>
             <code>node</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+</table>
+
+## <a name="#image"></a> Image
+
+<table>
+    <tr>
+        <th width="100">Property</th>
+        <th width="250">Description</th>
+        <th width="80">Type</th>
+        <th width="120">Option Value</th>
+        <th width="100">Default</th>
+    </tr>
+    <tr>
+        <td>src</td>
+        <td>Image soruce url</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>alt</td>
+        <td>Alt text for image</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>-</td>
+        <td>
+            <code>-</code>
+        </td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Image type</td>
+        <td>
+            <code>string</code>
+        </td>
+        <td>default | circle | square</td>
+        <td>
+            <code>default</code>
+        </td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>Image size array [width, height] example size={[320,320]}</td>
+        <td>
+            <code>array</code>
         </td>
         <td>-</td>
         <td>

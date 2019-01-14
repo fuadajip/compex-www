@@ -10,6 +10,7 @@ import Button from '../components/Button';
 import {Breadcrumb, BreadcrumbItem} from '../components/Breadcrumb';
 import Alert from '../components/Alert';
 import Badge from '../components/Badge';
+import Image from '../components/Image';
 
 // storiesOf('Welcome', module).add('to Storybook', () => (
 //   <Welcome showApp={linkTo('Button')} />
@@ -159,3 +160,32 @@ storiesOf('Badge', module)
   .add('success', () => <Badge type="success">success</Badge>)
   .add('warning', () => <Badge type="warning">warning</Badge>)
   .add('danger', () => <Badge type="danger">warning</Badge>);
+storiesOf('Image', module)
+  .add('default', () => (
+    <Image
+      src="http://www.turkishfashion.net/re_images/1375705159_offer_HM5.jpg"
+      alt="my-image"
+    />
+  ))
+  .add('circle', () => (
+    <Image
+      src="http://www.turkishfashion.net/re_images/1375705159_offer_HM5.jpg"
+      alt="my-image"
+      type="circle"
+    />
+  ))
+  .add('square', () => (
+    <Image
+      src="http://www.turkishfashion.net/re_images/1375705159_offer_HM5.jpg"
+      alt="my-image"
+      type="square"
+    />
+  ))
+  .add('custom size', () => (
+    <Image
+      src="http://www.turkishfashion.net/re_images/1375705159_offer_HM5.jpg"
+      alt="my-image"
+      type="square"
+      size={[320, 320]}
+    />
+  ));

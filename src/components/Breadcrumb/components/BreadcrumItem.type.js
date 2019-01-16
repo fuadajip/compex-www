@@ -1,6 +1,8 @@
-//@flow
-import React from 'react';
+// @flow
+import * as React from 'react';
 
 export type BreadcrumbItemType = {
-  children?: React.Node
+  children?: React.Node,
+  separator?: string,
+  name?: string
 };

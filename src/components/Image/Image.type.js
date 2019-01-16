@@ -1,7 +1,7 @@
-//@flow
+// @flow
 export type ImageType = {
   src?: string,
   alt?: string,
-  size?: Array,
+  size?: Array<number>,
   type?: string
 };

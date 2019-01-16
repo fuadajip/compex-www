@@ -1,6 +1,5 @@
-//@flow
-import React, {Fragment} from 'react';
-import * as ReactDOM from 'react-dom';
+// @flow
+import React from 'react';
 import './index.scss';
 
 import type {AlertType} from './Alert.type';

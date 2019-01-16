@@ -1,5 +1,5 @@
-//@flow
-import React from 'react';
+// @flow
+import * as React from 'react';
 
 export type BadgeType = {
   type?: string,

@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React from 'react';
 import './index.scss';
 import type {ButtonType} from './Button.type';
@@ -13,7 +13,7 @@ const Button = ({
   icon,
   iconPosition,
   onClick
-}: ButtonType) => {
+}: Props) => {
   let classNames, classNamesIcon;
   switch (type) {
     case 'primary':
@@ -56,7 +56,7 @@ const Button = ({
 
   const renderIcon = icon ? <i className={classNamesIcon}>{icon}</i> : null;
   const renderChildren =
-    iconPosition == 'left' ? [renderIcon, children] : [children, renderIcon];
+    iconPosition === 'left' ? [renderIcon, children] : [children, renderIcon];
   return (
     <button
       disabled={disabled}

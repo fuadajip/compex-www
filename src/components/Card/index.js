@@ -1,5 +1,5 @@
 // @flow
-import React, {Fragment} from 'react';
+import React from 'react';
 import './index.scss';
 import type {CardType} from './Card.type';
 
@@ -16,7 +16,7 @@ const Card = ({
   hoverable
 }: Props) => {
   const cardSize =
-    size == 'small' ? 'compex-card compex-card-small' : 'compex-card';
+    size === 'small' ? 'compex-card compex-card-small' : 'compex-card';
 
   const cardClassNames = hoverable
     ? `${cardSize} compex-card-hover`

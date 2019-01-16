@@ -11,3 +11,22 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.compex-breadcrumb > span:last-child .compex-breadcrumb-separator {
+  display: none;
+}
+
+.compex-breadcrumb a {
+  text-decoration: none;
+  color: $color-grey;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.compex-breadcrumb a:hover {
+  color: $color-blue;
+}
+
+.compex-breadcrumb-separator {
+  margin: 0 8px;
+  color: $color-grey;
+}

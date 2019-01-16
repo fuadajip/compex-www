@@ -1,17 +1,16 @@
-//@flow
-
+// @flow
 import React from 'react';
 import './index.scss';
 import type {BadgeType} from './Badge.type';
 
 type Props = BadgeType;
 
-const Badge = ({type, hoverable, children}) => {
+const Badge = ({type, hoverable, children}: Props) => {
   let classNames = 'compex-badge compex-badge-pill';
 
-  hoverable
-    ? (classNames = `${classNames} compex-badge-hoverable`)
-    : classNames;
+  if (hoverable) {
+    classNames = `${classNames} compex-badge-hoverable`;
+  }
 
   switch (type) {
     case 'primary':
@@ -27,7 +26,6 @@ const Badge = ({type, hoverable, children}) => {
       classNames = `${classNames} compex-badge-danger`;
       break;
     default:
-      classNames;
       break;
   }
   return <div className={classNames}>{children}</div>;

@@ -1,11 +1,11 @@
-//@flow
+// @flow
 import React from 'react';
 import './index.scss';
 import type {ImageType} from './Image.type';
 
 type Props = ImageType;
 
-const Image = ({src, alt, type, size}) => {
+const Image = ({src, alt, type, size}: Props) => {
   let classNames = 'compex-image';
   switch (type) {
     case 'circle':

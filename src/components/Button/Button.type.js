@@ -1,5 +1,5 @@
-//@flow
-import React from 'react';
+// @flow
+import * as React from 'react';
 
 export type ButtonType = {
   type?: string,
@@ -9,5 +9,5 @@ export type ButtonType = {
   icon?: React.Node,
   iconPosition?: string,
   children?: React.Node,
-  oncClick?: SyntheticEvent<T>
+  onClick?: Function
 };

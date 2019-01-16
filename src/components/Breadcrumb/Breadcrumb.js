@@ -1,13 +1,20 @@
-//@flow
-import React from 'react';
-import {BreadcrumbType} from './Breadcrumb.type';
+// @flow
+import * as React from 'react';
+
 import './Breadcrumb.scss';
 
 import BreadcrumbItem from './components/BreadcrumbItem';
+// import type {BreadcrumbType} from './Breadcrumb.type';
 
-type Props = BreadcrumbType;
+// type Props = BreadcrumbType;
 
-const Breadcrumb = ({children, separator}): Props => {
+const Breadcrumb = ({
+  children,
+  separator
+}: {
+  children?: any,
+  separator?: string
+}) => {
   return (
     <div className="compex-breadcrumb">
       {children

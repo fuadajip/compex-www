@@ -1,7 +1,7 @@
 {
   "name": "@inspirasia/compex-www",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",

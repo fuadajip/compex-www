@@ -1,5 +1,5 @@
 {
-  "name": "compex-www",
+  "name": "@inspirasia/compex-www",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

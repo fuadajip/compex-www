@@ -1,5 +1,7 @@
 # Compex WWW
 
+![](https://img.shields.io/npm/v/@inspirasia/compex-www.svg)
+![](https://img.shields.io/npm/dt/@inspirasia/compex-www.svg)
 <table>
     <tr>
         <th>Branch</th>
